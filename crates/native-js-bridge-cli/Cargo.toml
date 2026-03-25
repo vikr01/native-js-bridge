@@ -1,0 +1,18 @@
+[package]
+name        = "native-js-bridge-cli"
+version.workspace   = true
+edition.workspace   = true
+license.workspace   = true
+description = "CLI tool for generating npm distribution files for native Rust CLI binaries"
+
+[[bin]]
+name = "native-js-bridge"
+path = "src/main.rs"
+
+[dependencies]
+js-bridge-core = "0.0.0-alpha.0"
+anyhow         = "1"
+clap           = { version = "4", features = ["derive"] }
+serde          = { version = "1", features = ["derive"] }
+toml           = "0.8"
+serde_json     = { version = "1", features = ["preserve_order"] }

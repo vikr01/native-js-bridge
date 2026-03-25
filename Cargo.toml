@@ -1,0 +1,12 @@
+[workspace]
+members = ["crates/native-js-bridge-cli"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/vikr01/native-js-bridge"
+
+[patch.crates-io]
+js-bridge-core = { path = "../wasm-js-bridge/crates/js-bridge-core" }
