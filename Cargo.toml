@@ -8,5 +8,3 @@ edition = "2021"
 license = "MIT"
 repository = "https://github.com/vikr01/native-js-bridge"
 
-[patch.crates-io]
-js-bridge-core = { path = "../wasm-js-bridge/crates/js-bridge-core" }
