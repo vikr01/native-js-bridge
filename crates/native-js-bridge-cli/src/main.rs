@@ -72,6 +72,10 @@ struct NativeJsMeta {
     scope: String,
     binary: String,
     platforms: Vec<PlatformEntry>,
+    /// Version of `native-js-bridge-cli` to install — read by CI, ignored by the generator.
+    #[allow(dead_code)]
+    #[serde(default)]
+    cli_version: Option<String>,
     /// Arbitrary key/value pairs merged into the root `package.json` after the
     /// generated fields. Any key may be set; later entries override earlier ones.
     ///
